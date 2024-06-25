@@ -272,7 +272,7 @@
 
   <gazebo reference="cam_gazebo_link">
     <sensor name='camera' type='camera'>
-      <pose>-0.050000 -0.010000 0.000000 -1.5708 0.000000 -3.141592</pose>
+      <pose>0.050000 -0.010000 0.000000 0 0.000000 0</pose>
       <camera name='__default__'>
         <horizontal_fov>1.012300</horizontal_fov>
         <image>
@@ -314,7 +314,7 @@
       <visualize>true</visualize>
       <topic>__default_topic__</topic>
       <plugin filename="libgazebo_ros_imu_sensor.so" name="imu_plugin">
-        <topicName>robotis_op3/imu</topicName>
+        <topicName>robotis/open_cr/imu</topicName>
         <bodyName>body_link</bodyName>
         <updateRateHZ>10.0</updateRateHZ>
         <gaussianNoise>0.0</gaussianNoise>
